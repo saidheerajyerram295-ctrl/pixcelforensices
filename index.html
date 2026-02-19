@@ -100,25 +100,26 @@ const TOTAL_QUESTIONS = 15;
 
 /* ✅ YOUR EXACT CORRECT ANSWERS ADDED */
 const levels = [
-  {type:"img", q:"Find the fake image", correct:[1]},
-  {type:"img", q:"Identify the non-original image", correct:[1]},
-  {type:"img", q:"Which image is AI-generated?", correct:[1]},
-  {type:"img", q:"Find the manipulated image", correct:[1]},
+  {type:"img", q:"Find the fake image", correct:[1]},   // Q1
+  {type:"img", q:"Identify the non-original image", correct:[1]}, // Q2
+  {type:"img", q:"Which image is AI-generated?", correct:[0]}, // Q3
+  {type:"img", q:"Find the manipulated image", correct:[1]}, // Q4
 
-  {type:"img", q:"Detect the fake image", correct:[1]},
-  {type:"img", q:"Which image is not real?", correct:[1]},
-  {type:"img", q:"AI vs Real – find fake", correct:[1]},
-  {type:"img", q:"Spot the manipulation", correct:[1]},
+  {type:"img", q:"Detect the fake image", correct:[0]}, // Q5
+  {type:"img", q:"Which image is not real?", correct:[0]}, // Q6
+  {type:"img", q:"AI vs Real – find fake", correct:[1]}, // Q7
+  {type:"img", q:"Spot the manipulation", correct:[0]}, // Q8
 
-  {type:"img", q:"Find the fake images", correct:[1,2]},
-  {type:"img", q:"Identify non-original images", correct:[1,2]},
-  {type:"img", q:"Which images are not real?", correct:[1,2]},
-  {type:"img", q:"Detect AI-generated images", correct:[1,2]},
-  {type:"img", q:"Extreme level – find the fake images", correct:[1,2]},
+  {type:"img", q:"Find the fake images", correct:[0,2]}, // Q9
+  {type:"img", q:"Identify non-original images", correct:[0,1]}, // Q10
+  {type:"img", q:"Which images are not real?", correct:[1,2]}, // Q11
+  {type:"img", q:"Detect AI-generated images", correct:[0,1]}, // Q12
+  {type:"img", q:"Extreme level – find the fake images", correct:[0,2]}, // Q13
 
-  {type:"vid", q:"Identify the ORIGINAL video", correct:1},
-  {type:"vid", q:"Which video is NOT AI-generated?", correct:1}
+  {type:"vid", q:"Identify the ORIGINAL video", correct:1}, // Q14
+  {type:"vid", q:"Which video is NOT AI-generated?", correct:1} // Q15
 ];
+
 
 function startGame(){
   document.getElementById("start").classList.add("hidden");
